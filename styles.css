@@ -1,0 +1,296 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e7e7e8;
+    color: rgb(35, 36, 44);
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #e2e2e2;
+}
+
+nav a {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(35, 36, 44);
+}
+
+header {
+    text-align: center;
+    padding: 1%;
+    padding-top: 2%;
+    margin: 0px 10%;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    width: 80%;
+    max-width: 600px;
+    margin: 1vh;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 1vh 20vw;;
+    margin: 2vh auto;
+    background-color: #b9bbc2;
+    justify-content: space-between;
+}
+
+li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+li:first-of-type a {
+    color: rgb(59, 59, 62);
+}
+
+li:first-of-type {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+    text-decoration-color: rgb(59, 59, 62);
+}
+
+li a:hover {
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+section:first-child {
+    position: relative;
+}
+
+.sale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 60%;
+    text-shadow: 2px 2px 4px black;
+}
+
+.sale h2 {
+    font-size: clamp(2rem, 7vw, 8rem);
+    margin: 0;
+    text-align: center;
+}
+
+.sale p {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.button {
+    background-color: #b9bbc2;
+    font-size: 1.3rem;
+    padding: .5em;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 12px;
+    width: 8em;
+    text-align: center;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: #8e919a;
+}
+
+.sale a {
+    color: white;
+    text-decoration: none;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+    opacity: 0;
+    animation: fade 90s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 30s;
+}
+
+.slide:nth-child(5) {
+    animation-delay: 40s;
+}
+
+.slide:nth-child(6) {
+    animation-delay: 50s;
+}
+
+.slide:nth-child(7) {
+    animation-delay: 60s;
+}
+
+.slide:nth-child(8) {
+    animation-delay: 70s;
+}
+
+.slide:nth-child(9) {
+    animation-delay: 80s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    2% { opacity: 1;}
+    9% {opacity: 1;}
+    15% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+section:nth-child(2) {
+    margin: 2%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-areas: 
+        "heading heading heading"
+        "card1 card2 card3";
+    gap: 2%;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "heading heading"
+            "card1 card2"
+            "card3 card3";
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "heading"
+            "card1"
+            "card2"
+            "card3";
+    }
+}
+
+article {
+    background-color: #b9bbc2;
+    padding: 4%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    margin-top: 0px;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+article p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.heading {
+    grid-area: heading;
+    background-color: #e7e7e8;
+    margin: 0;
+    padding: 2vw;
+}
+
+.heading h2 {
+    font-size: 5vw;
+    margin: 1vw;
+    font-weight: 600;
+}
+
+.heading p {
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#hours {
+    font-size: 1.4em;
+    color: #3a393e;
+}
+
+article a {
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-family: "Lato", sans-serif;
+}
+
+footer {
+    display: flex;
+    gap: 2%;
+    padding: 1% 10%;
+    margin-top: 5rem;
+    background-color: #e2e2e2;
+    align-items: center;
+}
+
+footer > div:first-child img {
+    text-align: center;
+    width: 150px;
+}
+
+footer > div:last-child {
+    flex: 1;
+}
+
+footer > div:last-child p {
+    text-align: right;
+}
