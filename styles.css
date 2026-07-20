@@ -19,6 +19,7 @@ nav a {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     letter-spacing: 0.08em;
+    font-size: clamp(10px, 2vw, 16px);
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(35, 36, 44);
@@ -45,6 +46,7 @@ ul {
     margin: 2vh auto;
     background-color: #b9bbc2;
     justify-content: space-between;
+    align-items: center;
 }
 
 li {
@@ -90,7 +92,7 @@ section:first-child {
 }
 
 .sale h2 {
-    font-size: clamp(2rem, 7vw, 8rem);
+    font-size: clamp(48px, 7vw, 8rem);
     margin: 0;
     text-align: center;
 }
@@ -195,6 +197,7 @@ section:nth-child(2) {
             "heading heading"
             "card1 card2"
             "card3 card3";
+        margin-bottom: 5rem;
     }
 }
 
@@ -206,6 +209,7 @@ section:nth-child(2) {
             "card1"
             "card2"
             "card3";
+        margin-bottom: 5rem;
     }
 }
 
@@ -222,8 +226,14 @@ article h2 {
 }
 
 article p {
-    font-size: 1.5rem;
+    font-size: max(18px, 2vw);
     line-height: 1.5;
+}
+
+article a {
+    color: whitesmoke;
+    font-size: max(18px, 2vw);
+    font-family: "Lato", sans-serif;
 }
 
 .heading {
@@ -234,13 +244,12 @@ article p {
 }
 
 .heading h2 {
-    font-size: 5vw;
+    font-size: max(32px, 5vw);
     margin: 1vw;
-    font-weight: 600;
 }
 
 .heading p {
-    font-size: 2vw;
+    font-size: max(18px, 2vw);
     line-height: 1.5;
 }
 
@@ -263,28 +272,26 @@ article p {
 }
 
 #hours {
-    font-size: 1.4em;
     color: #3a393e;
 }
 
-article a {
-    color: whitesmoke;
-    font-size: 1.4em;
-    font-family: "Lato", sans-serif;
+main {
+    padding-bottom: 5vh;
 }
 
 footer {
     display: flex;
     gap: 2%;
-    padding: 1% 10%;
-    margin-top: 5rem;
+    padding: 0 5vw;
+    margin-top: 10vh;
     background-color: #e2e2e2;
     align-items: center;
+    height: max(60px, 15vh);
 }
 
 footer > div:first-child img {
     text-align: center;
-    width: 150px;
+    width: max(60px, 15vh);
 }
 
 footer > div:last-child {
@@ -293,4 +300,5 @@ footer > div:last-child {
 
 footer > div:last-child p {
     text-align: right;
+    font-size: max(12px, 1vw);
 }

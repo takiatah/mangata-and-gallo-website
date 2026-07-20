@@ -4,6 +4,16 @@ A responsive website designed for **Mangata & Gallo**, a luxury jewelry company 
 
 The website showcases the brand's elegant style, product offerings, and story while providing users with an immersive browsing experience.
 
+## Preview
+
+### Desktop
+![Homepage Screenshot](screenshots/homepage1.png)
+![Homepage Screenshot](screenshots/homepage2.png)
+![Homepage Screenshot](screenshots/homepage4.png)
+
+### Mobile
+![Homepage Screenshot](screenshots/mobilehome1.png) ![Homepage Screenshot](screenshots/mobilehome2.png)
+
 ## Features
 
 - Responsive layout that adapts to desktop, tablet, and mobile screens
