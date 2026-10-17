@@ -4,6 +4,10 @@ A responsive website designed for **Mangata & Gallo**, a luxury jewelry company 
 
 The website showcases the brand's elegant style, product offerings, and story while providing users with an immersive browsing experience.
 
+Link to Website: (Mangata & Gallo)[https://takiatah.github.io/mangata-and-gallo-website/]
+
+(Ongoing Project)
+
 ## Preview
 
 ### Desktop
